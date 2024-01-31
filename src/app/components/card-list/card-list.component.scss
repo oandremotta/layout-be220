@@ -1,0 +1,141 @@
+.img-gray {
+  display: block;
+  width: 100%;
+  /* Set width to 100% */
+  height: 100%;
+  /* Set height to 100% */
+  margin: 20px auto 40px auto;
+  transition: .3s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: black;
+  /* IE */
+}
+
+.img-rounded {
+  border-radius: 20px;
+  width: 100%;
+  /* Set width to 100% */
+  height: 100%;
+  /* Set height to 100% */
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the image covers the entire space */
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* You can adjust the color as needed */
+  font-size: 18px;
+  /* You can adjust the font size as needed */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-left-text {
+  position: absolute;
+  bottom: -20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* You can adjust the color as needed */
+  font-size: 12px;
+  /* You can adjust the font size as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.new-text {
+  margin-right: 10px;
+  /* Adjust the margin as needed for spacing between "NOVO" and "TREINO" */
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.90);
+  /* Cor escura com opacidade ajustável */
+}
+
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  /* Adjust padding as needed */
+}
+
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-slide {
+  width: 70%;
+}
+
+.image-container {
+  position: relative;
+}
+
+
+.orange-title {
+  color: #B05F0A;
+  /* Laranja */
+  font-size: 24px;
+  /* Tamanho desejado */
+  margin: 0;
+  /* Remover margem padrão do título */
+}
+
+.white-subtitle {
+  color: white;
+  font-size: 18px;
+  /* Tamanho desejado */
+  margin: 0;
+  /* Remover margem padrão do subtítulo */
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}

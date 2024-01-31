@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="mt-8">
+      <ion-icon class="zoom-twice" name="menu-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title class="ion-text-center">usina play</ion-title>
+    <ion-buttons slot="end" class="ion-padding-end">
+      <ion-icon name="notifications" class="notification-icon"></ion-icon>
+      <div class="notification-dot"></div>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="ion-justify-content-center ion-padding-horizontal">
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-title>
+      <ion-label class="ion-text-start">
+        <h2 class="custom-title">{{usuario.nome}}</h2>
+        <p class="purple-text">{{usuario.nivel}}</p>
+      </ion-label>
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="rounded-bottom">
+    <ion-grid>
+      <ion-row class="ion-align-items-start ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-chip class="orange-text dark-bg">
+            <div class="flex-container">
+              <ion-icon name="body" class="border-icon-orange"></ion-icon>
+              <ion-label class="small-text">MEU CORPO</ion-label>
+            </div>
+            <div class="flex-container">
+              <ion-icon name="trophy" class="border-icon-orange"></ion-icon>
+              <ion-label class="small-text">OBJETIVOS E CONQUISTAS</ion-label>
+            </div>
+          </ion-chip>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
