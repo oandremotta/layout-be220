@@ -9,20 +9,21 @@ import { UserService } from '../services/user.service';
 import { Usuario } from '../mocks/user.data';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { MenuComponent } from '../components/menu/menu.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, HeaderComponent, CardListComponent],
+  imports: [IonicModule, CommonModule, FormsModule, HeaderComponent, CardListComponent, MenuComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomePage implements OnInit {
 
   usuario!: Usuario;
   loggedUser: any;
-  constructor(private userService: UserService, private authService: AuthService, private router: Router) { }
+  constructor(private userService: UserService, private authService: AuthService) { }
 
   ngOnInit() {
     this.usuario = this.userService.getUsuario();
@@ -34,8 +35,5 @@ export class HomePage implements OnInit {
       this.loggedUser = user;
     });
   }
-  logout() {
-    this.authService.logout();
-    this.router.navigateByUrl('/login', { replaceUrl: true });
-  }
+
 }
