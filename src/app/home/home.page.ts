@@ -7,6 +7,8 @@ import { HeaderComponent } from '../components/header/header.component';
 import { CardListComponent } from '../components/card-list/card-list.component';
 import { UserService } from '../services/user.service';
 import { Usuario } from '../mocks/user.data';
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +21,21 @@ import { Usuario } from '../mocks/user.data';
 export class HomePage implements OnInit {
 
   usuario!: Usuario;
-  constructor(private userService: UserService) { }
+  loggedUser: any;
+  constructor(private userService: UserService, private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.usuario = this.userService.getUsuario();
+    this.getUser();
+  }
+
+  getUser() {
+    this.authService.getLoggedInUser().subscribe((user: any) => {
+      this.loggedUser = user;
+    });
+  }
+  logout() {
+    this.authService.logout();
+    this.router.navigateByUrl('/login', { replaceUrl: true });
   }
 }
