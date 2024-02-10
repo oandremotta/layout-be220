@@ -6,6 +6,7 @@
     "@angular/common": "^17.0.2",
     "@angular/compiler": "^17.0.2",
     "@angular/core": "^17.0.2",
+    "@angular/fire": "^17.0.1",
     "@angular/forms": "^17.0.2",
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
@@ -69,7 +70,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "91109559695469517"
+        "hash": "13924459389979241635"
       },
       {
         "file": ".vscode/extensions.json",
@@ -78,6 +79,10 @@
       {
         "file": ".vscode/settings.json",
         "hash": "5611257266296869630"
+      },
+      {
+        "file": "README.md",
+        "hash": "12472837477951821092"
       },
       {
         "file": "android/.gitignore",
@@ -293,7 +298,7 @@
       },
       {
         "file": "angular.json",
-        "hash": "10618098369361505948"
+        "hash": "11227076815174574240"
       },
       {
         "file": "capacitor.config.ts",
@@ -309,11 +314,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "6365721411954651083"
+        "hash": "11350662420672265924"
       },
       {
         "file": "package.json",
-        "hash": "10023514847180213726"
+        "hash": "4676449418288449699"
       },
       {
         "file": "src/app/app.component.html",
@@ -333,15 +338,15 @@
       },
       {
         "file": "src/app/app.routes.ts",
-        "hash": "16595844919700480130"
+        "hash": "5786687506221357473"
       },
       {
         "file": "src/app/components/card-list/card-list.component.html",
-        "hash": "11129339765559003932"
+        "hash": "17543640464485341476"
       },
       {
         "file": "src/app/components/card-list/card-list.component.scss",
-        "hash": "10539877947915416359"
+        "hash": "3148018388972903499"
       },
       {
         "file": "src/app/components/card-list/card-list.component.ts",
@@ -349,19 +354,19 @@
       },
       {
         "file": "src/app/components/header/header.component.html",
-        "hash": "2251114309781259730"
+        "hash": "4027242063562640510"
       },
       {
         "file": "src/app/components/header/header.component.scss",
-        "hash": "3244421341483603138"
+        "hash": "13210575071911156673"
       },
       {
         "file": "src/app/components/header/header.component.ts",
-        "hash": "9792191120269956772"
+        "hash": "1622843072288451180"
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "3973158187332272749"
+        "hash": "3590300961422360767"
       },
       {
         "file": "src/app/home/home.page.scss",
@@ -369,7 +374,31 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "17655993129075825602"
+        "hash": "13895432630662547092"
+      },
+      {
+        "file": "src/app/login/login.page.html",
+        "hash": "6353094273600822531"
+      },
+      {
+        "file": "src/app/login/login.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/login/login.page.ts",
+        "hash": "5634085045914942528"
+      },
+      {
+        "file": "src/app/mocks/user.data.ts",
+        "hash": "13055172032927508348"
+      },
+      {
+        "file": "src/app/services/auth.service.ts",
+        "hash": "10289434823204053352"
+      },
+      {
+        "file": "src/app/services/user.service.ts",
+        "hash": "10194797572228401528"
       },
       {
         "file": "src/assets/icon/favicon.png",
@@ -385,11 +414,11 @@
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "17458466784506237106"
+        "hash": "11200658880097862567"
       },
       {
         "file": "src/global.scss",
-        "hash": "16777120732726033300"
+        "hash": "15136231763994194763"
       },
       {
         "file": "src/index.html",
@@ -397,7 +426,7 @@
       },
       {
         "file": "src/main.ts",
-        "hash": "282009733975285211"
+        "hash": "7637767582994067149"
       },
       {
         "file": "src/polyfills.ts",
@@ -409,7 +438,7 @@
       },
       {
         "file": "src/theme/variables.scss",
-        "hash": "7115169891222002459"
+        "hash": "692860643601306296"
       },
       {
         "file": "src/zone-flags.ts",

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="orange-text dark-bg">usina play</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="login()" [formGroup]="credentials">
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="password" placeholder="Senha" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" class="orange-text" color="light"
+      [disabled]="!credentials.valid">Entrar</ion-button>
+    <ion-button type="button" expand="block" class="orange-text ion-margin-top" color="dark"
+      (click)="register()">Cadastre-se
+    </ion-button>
+  </form>
+</ion-content>
