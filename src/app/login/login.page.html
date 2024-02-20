@@ -5,18 +5,23 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+  <p class="text-white ion-padding">Para se cadastrar, coloque o e-mail e senha e clique em "Cadastra-se"</p>
+
   <form (ngSubmit)="login()" [formGroup]="credentials">
     <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="email" placeholder="Email" class="text-white" formControlName="email"></ion-input>
-    </ion-item>
-    <ion-item fill="solid" class="ion-margin-bottom">
-      <ion-input type="password" placeholder="Senha" class="text-white" formControlName="password"></ion-input>
+      <ion-input type="email" placeholder="Email" formControlName="email" class="text-white"></ion-input>
     </ion-item>
 
-    <ion-button type="submit" expand="block" class="text-orange" color="light"
-      [disabled]="!credentials.valid">Entrar</ion-button>
-    <ion-button type="button" expand="block" class="text-orange ion-margin-top" color="dark"
-      (click)="register()">Cadastre-se
+    <ion-item fill="solid" class="ion-margin-bottom">
+      <ion-input type="password" placeholder="Senha" formControlName="password" class="text-white"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" class="text-orange" color="light" [disabled]="!credentials.valid">
+      Entrar
+    </ion-button>
+
+    <ion-button type="button" expand="block" class="text-orange ion-margin-top" color="dark" (click)="register()">
+      Cadastre-se
     </ion-button>
   </form>
 </ion-content>
